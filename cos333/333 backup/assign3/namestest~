@@ -1,0 +1,10 @@
+#!/bin/bash
+
+clear
+rm out.txt.bz2
+./c1.py < names.txt > out.txt
+bzip2 out.txt
+FILESIZE1=$(stat -c%s "out.txt.bz2")
+SUM=$(echo "scale=$s; $FILESIZE1/1024" | bc)
+r2=$(echo "scale=$s; 3108/$SUM" | bc)
+echo "file 1 = $SUM kb"

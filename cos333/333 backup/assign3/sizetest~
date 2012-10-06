@@ -1,0 +1,39 @@
+#!/bin/bash
+
+
+clear
+./c2.py < crank.txt > out.txt
+bzip2 < out.txt > zipped.bz2
+s=3
+orig=3171
+FILENAME1=/home/pgrabowski/phdvdev/workspace/assign3/zipped.bz2
+FILENAME2=/home/pgrabowski/phdvdev/workspace/assign3/c2.py
+FILENAME3=/home/pgrabowski/phdvdev/workspace/assign3/d2.py
+FILESIZE1=$(stat -c%s "$FILENAME1")
+FILESIZE2=$(stat -c%s "$FILENAME2")
+FILESIZE3=$(stat -c%s "$FILENAME3")
+SUM=$(echo "scale=$s; $FILESIZE1/1024 + $FILESIZE2/1024 + $FILESIZE3/1024" | bc)
+r2=$(echo "scale=$s; $orig/$SUM" | bc)
+echo "Rank"
+echo "zipped = $FILESIZE1 b file 2 = $FILESIZE2 b file 3 = $FILESIZE3 kb"
+echo "Size  is $SUM kB."
+echo "Ratio is $r2"
+echo
+
+./c1.py < names.txt > out.txt
+bzip2 < out.txt > zipped2.bz2
+s=3
+orig=3171
+FILENAME1=/home/pgrabowski/phdvdev/workspace/assign3/zipped2.bz2
+FILENAME2=/home/pgrabowski/phdvdev/workspace/assign3/c1.py
+FILENAME3=/home/pgrabowski/phdvdev/workspace/assign3/d1.py
+FILESIZE1=$(stat -c%s "$FILENAME1")
+FILESIZE2=$(stat -c%s "$FILENAME2")
+FILESIZE3=$(stat -c%s "$FILENAME3")
+SUM=$(echo "scale=$s; $FILESIZE1/1024 + $FILESIZE2/1024 + $FILESIZE3/1024" | bc)
+r2=$(echo "scale=$s; $orig/$SUM" | bc)
+echo "Names"
+echo "zipped = $FILESIZE1 b c1 = $FILESIZE2 k d1 = $FILESIZE3 b"
+echo "Size  is $SUM kB."
+echo "Ratio is $r2"
+echo

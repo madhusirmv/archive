@@ -1,0 +1,6 @@
+
+In ancient Unix times, filename regular expression matching ("wildcards") was done not in the shell itself, but in a separate program called glob. This lives on in various nooks and crannies -- csh and tcsh have a shell built-in called glob that does this operation -- and a variety of programming languages have functions or operators that match regular expressions of this class (for instance, Like in Visual Basic and SQL, each with its own syntax).
+
+This assignment has two parts. The first is to modify the regular expression code in Section 9.2 of The Practice of Programming to process regular expressions of this class. The second part is to develop a compact specification of a set of test cases, and a program that will run the tests from the specification.
+
+The detailed structure of the RE code in TPOP and the interface it presents to the rest of the program is quite specialized -- the goal was to present the essence of pattern-matching as compactly as possible, not to make it easy to generalize. So although the basic algorithm is fine for our purposes here, the packaging and some of the details have to be different. As always, we want to hide the implementation details, so they can be readily changed without affecting the rest of the program.

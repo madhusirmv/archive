@@ -1,0 +1,35 @@
+public class State implements Comparable<State> {
+    int numMoves; 
+    State prevState;
+    Board currentBoard;
+    
+    
+    public State(Board board){
+        this.currentBoard = board;
+        this.numMoves = 0;
+        this.prevState = null;
+    }
+    
+    public int compareTo(State that){
+//        if((this.currentBoard.hamming() + this.numMoves) ==
+//           (that.currentBoard.hamming() + that.numMoves))
+//            return 0;
+//        else if((this.currentBoard.hamming() + this.numMoves) <
+//                (that.currentBoard.hamming() + that.numMoves))
+//            return -1;
+//        else 
+//            return 1;
+        
+        if((this.currentBoard.manhattan() + this.numMoves) ==
+           (that.currentBoard.manhattan() + that.numMoves))
+            return 0;
+        else if((this.currentBoard.manhattan() + this.numMoves) <
+           (that.currentBoard.manhattan() + that.numMoves))
+            return -1;
+        else 
+            return 1;
+    }
+    
+}
+
+

@@ -1,0 +1,21 @@
+/*************************************************************************
+  * Names: Peter Grabowski and Rafael Grinberg
+  * NetIDs: pgrabows@ and rgrinber@
+  * Precepts: P02B and P02
+  * 
+  * Compilation:  javac Subset.java
+  * Execution:    java Subset
+  * Dependencies: StdIn.java, RandomizedQueue.java
+  *
+  * ?
+  * 
+  *************************************************************************/
+
+import java.util.Iterator;
+import java.util.NoSuchElementException;
+
+public class Subset {
+    
+    ;
+    
+}

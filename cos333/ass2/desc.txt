@@ -1,0 +1,13 @@
+Base64 encoding provides a way to encode arbitrary binary data into printable ASCII for mailing or shipment to a web browser, then decode it back into exactly its original form. The encoding takes the input 6 bits at a time and maps that into a letter, digit or other character that is guaranteed to travel safely through all systems. This process expands the input by only 33%, so it is acceptably efficient. Decoding reverses the process, taking 8-bit character input back into properly packed 6-bit fields that reproduce the original input exactly.
+
+This assignment is an exercise in writing code to a published standard. The file base64.html contains an excerpt (most of Section 6.8) from RFC 2045, the standard for MIME (Multipurpose Internet Mail Extensions) encoding. Your task is to
+
+write an encoder in Python that converts any input stream into a proper Base64 encoding as specified in this standard.
+write a decoder in Python that decodes Base64 back into its original form.
+create test files that will exercise your code thoroughly.
+Your programs must read from stdin and write to stdout. The programs must not throw exceptions or print any other output. In particular, note the part of the standard that says "Any characters outside of the base64 alphabet are to be ignored in base64-encoded data." Your goal is an encoder that works on all inputs and a decoder that does the right thing on valid inputs like those produced by openssl. Your decoder should accept very long lines, ignore invalid characters, and stop when it encounters one or two = signs or the end of the input. Since there is arguably no true meaning to invalid input, we won't probe too hard at this aspect; just make sure you handle valid input correctly.
+
+Create at least 15 short test files named test.01, test.02, test.03, etc., to be used as inputs. These tests should thoroughly explore critical boundary conditions and other potential trouble spots of the standard and your code. You might find it helpful to read Chapter 6 of The Practice of Programming on testing.
+
+How you generate the tests is up to you, but bear in mind that they must include arbitrary binary data, not just ASCII text. Binary data is easier to generate with a C or Python program than by hand, and of course there's a lot of binary data around. The program od ("octal dump") is useful for looking at binary data; try od -tx1 to see bytes in hex.
+

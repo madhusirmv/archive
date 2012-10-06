@@ -1,0 +1,9 @@
+#!/bin/bash
+./c1 names.txt > namesencoded
+./u1 namesencoded > namesdecoded
+diff names.txt namesdecoded 
+
+./c2 crank.txt > crankencoded
+./u2 crankencoded > crankdecoded
+diff crankdecoded crank.txt
+

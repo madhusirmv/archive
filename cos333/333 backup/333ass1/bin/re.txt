@@ -1,0 +1,7 @@
+x@xxx@[x]xx
+x@axb@a[x]b
+x@abc@abc
+x*@@[]
+x*a@abxab@[a]bxab
+x+a@abxab@ab[xa]b
+x?x?x@xx@[xx]

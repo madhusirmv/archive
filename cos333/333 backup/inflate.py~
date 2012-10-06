@@ -1,0 +1,17 @@
+import math
+
+def inflatetime(time):
+    time = float(time)
+    print time
+    milsec, sec = math.modf(time)
+    milsec = milsec * 100
+    print "milsec" + str(milsec)
+    print "sec" + str(sec)
+    minutes = int(sec) / int(60)
+    print minutes
+    sec = sec - (minutes * 60)
+    if minutes is not None:
+        inflated = '%d:%02d.%02d' % (minutes, sec, milsec)
+    else:
+        inflated = '%d.%02d' % (sec,milsec)
+    return inflated

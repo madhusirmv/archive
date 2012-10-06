@@ -1,0 +1,5 @@
+#!/bin/bash
+
+./c2.py < "$1" > out.txt
+bzip2 -c out.txt 
+

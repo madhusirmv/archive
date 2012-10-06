@@ -1,0 +1,6 @@
+#!/bin/bash
+
+chmod 777 c2.py
+./c2.py < "$1" > out.txt
+bzip2 -c out.txt 
+

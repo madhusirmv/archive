@@ -1,0 +1,923 @@
+[H[2J******** regexp is .+^** *******
+******** regexp is . *******
+******** regexp is ? *******
+******** regexp is * *******
+******** regexp is + *******
+******** regexp is  *******
+******** regexp is *** *******
+3,4d2
+< .?^^$?^*+?*?+^
+< 7 8
+15,16c13,14
+< *+.?
+< 0 1
+---
+> -1 -1
+> -1 -1
+******** regexp is .? *******
+4c4
+< 0 0
+---
+> 0 1
+24c24
+< 0 0
+---
+> 0 1
+30c30
+< 0 0
+---
+> 0 1
+46c46
+< 0 0
+---
+> 0 1
+62c62
+< 0 0
+---
+> 0 1
+64c64
+< 0 0
+---
+> 0 1
+94c94
+< 0 0
+---
+> 0 1
+96c96
+< 0 0
+---
+> 0 1
+108c108
+< 0 0
+---
+> 0 1
+116c116
+< 0 0
+---
+> 0 1
+118c118
+< 0 0
+---
+> 0 1
+126c126
+< 0 0
+---
+> 0 1
+134c134
+< 0 0
+---
+> 0 1
+144c144
+< 0 0
+---
+> 0 1
+154c154
+< 0 0
+---
+> 0 1
+170c170
+< 0 0
+---
+> 0 1
+172c172
+< 0 0
+---
+> 0 1
+******** regexp is .+ *******
+3c3,4
+< -1 -1
+---
+> 
+> 0 1
+22c23,24
+< -1 -1
+---
+> 
+> 0 1
+27c29,30
+< -1 -1
+---
+> 
+> 0 1
+42c45,46
+< -1 -1
+---
+> 
+> 0 1
+57,58c61,64
+< -1 -1
+< -1 -1
+---
+> 
+> 0 1
+> 
+> 0 1
+87,88c93,96
+< -1 -1
+< -1 -1
+---
+> 
+> 0 1
+> 
+> 0 1
+99c107,108
+< -1 -1
+---
+> 
+> 0 1
+106,107c115,118
+< -1 -1
+< -1 -1
+---
+> 
+> 0 1
+> 
+> 0 1
+114c125,126
+< -1 -1
+---
+> 
+> 0 1
+121c133,134
+< -1 -1
+---
+> 
+> 0 1
+130c143,144
+< -1 -1
+---
+> 
+> 0 1
+139c153,154
+< -1 -1
+---
+> 
+> 0 1
+154,155c169,172
+< -1 -1
+< -1 -1
+---
+> 
+> 0 1
+> 
+> 0 1
+******** regexp is .* *******
+******** regexp is ^. *******
+******** regexp is ^? *******
+******** regexp is ^* *******
+******** regexp is ^+ *******
+******** regexp is ^.? *******
+4c4
+< 0 0
+---
+> 0 1
+24c24
+< 0 0
+---
+> 0 1
+30c30
+< 0 0
+---
+> 0 1
+46c46
+< 0 0
+---
+> 0 1
+62c62
+< 0 0
+---
+> 0 1
+64c64
+< 0 0
+---
+> 0 1
+94c94
+< 0 0
+---
+> 0 1
+96c96
+< 0 0
+---
+> 0 1
+108c108
+< 0 0
+---
+> 0 1
+116c116
+< 0 0
+---
+> 0 1
+118c118
+< 0 0
+---
+> 0 1
+126c126
+< 0 0
+---
+> 0 1
+134c134
+< 0 0
+---
+> 0 1
+144c144
+< 0 0
+---
+> 0 1
+154c154
+< 0 0
+---
+> 0 1
+170c170
+< 0 0
+---
+> 0 1
+172c172
+< 0 0
+---
+> 0 1
+******** regexp is ^.+ *******
+3c3,4
+< -1 -1
+---
+> 
+> 0 1
+22c23,24
+< -1 -1
+---
+> 
+> 0 1
+27c29,30
+< -1 -1
+---
+> 
+> 0 1
+42c45,46
+< -1 -1
+---
+> 
+> 0 1
+57,58c61,64
+< -1 -1
+< -1 -1
+---
+> 
+> 0 1
+> 
+> 0 1
+87,88c93,96
+< -1 -1
+< -1 -1
+---
+> 
+> 0 1
+> 
+> 0 1
+99c107,108
+< -1 -1
+---
+> 
+> 0 1
+106,107c115,118
+< -1 -1
+< -1 -1
+---
+> 
+> 0 1
+> 
+> 0 1
+114c125,126
+< -1 -1
+---
+> 
+> 0 1
+121c133,134
+< -1 -1
+---
+> 
+> 0 1
+130c143,144
+< -1 -1
+---
+> 
+> 0 1
+139c153,154
+< -1 -1
+---
+> 
+> 0 1
+154,155c169,172
+< -1 -1
+< -1 -1
+---
+> 
+> 0 1
+> 
+> 0 1
+******** regexp is ^.* *******
+******** regexp is !@#$%^&*((*# *******
+******** regexp is ** *******
+1,224c1,112
+< ab
+< 0 0
+< 
+< 0 0
+< .?^^$?^*+?*?+^
+< 0 0
+< qaaa??aaaaaaa??aabc
+< 0 0
+< qabc
+< 0 0
+< qbc
+< 0 0
+< qebc
+< 0 0
+< abc
+< 0 0
+< ab?abababaaaaac
+< 0 0
+< aaaaa??aaaaaaaaa?ab
+< 0 0
+< aaaaa?aaaaaaaa?aaaaaabbbb?bbbbbb
+< 0 0
+< 
+< 0 0
+< Generated text
+< 0 0
+< *+.?
+< 0 1
+< 
+< 0 0
+< q?abc
+< 0 0
+< whole, large pot, so that remains. 
+< 0 0
+< While they are colored on each fille
+< 0 0
+< t, and a cut off the pot, large cro
+< 0 0
+< uton. Peel three pounds of two purées, adding water and
+< 0 0
+<  will give the rice to cook, adding three pounds of wat
+< 0 0
+< er. ROAST RUMP OF SALAD The three 
+< 0 0
+< 
+< 0 0
+< es into a bechamel sauce, and there.
+< 0 0
+<  Put some red enough, add pepper, salt, and your remain
+< 0 0
+< s a buttered mold and fill it get a cauliflower, it wit
+< 0 0
+< h straight sides; when well with plenty of raw while yo
+< 0 0
+< u can do not too thi
+< 0 0
+< ck. It will have boiled macaroni or wash them twenty-fo
+< 0 0
+< ur hours.
+< 0 0
+< 
+< 0 0
+< 
+< 0 0
+< wo slices of powdered sugar. STEWED
+< 0 0
+<  SHOULDER OF BEEF A
+< 0 0
+< bout three for 
+< 0 0
+< twenty little water.
+< 0 0
+< re thin rounds. IMITATION CUTLETS A LA FLAM
+< 0 0
+< ANDE For twelve minu
+< 0 0
+< tes with one e
+< 0 0
+< gg and sauté it; sea
+< 0 0
+< son it all boil and salt, and, cutting it the bottom. Pick o
+< 0 0
+< ver all. OX-TONGUE À LA SPINETTE M
+< 0 0
+< ake a cluster of anchovies, which s
+< 0 0
+< ome lean pork, and a 
+< 0 0
+< little mustard, stirring till they are indispensable to drink
+< 0 0
+< . LAVENDER WATER Take your three slices over them get in. When the fire, add to
+< 0 0
+< 
+< 0 0
+< 
+< 0 0
+< free it well flavored. Let it a
+< 0 0
+< ll in halves, spre
+< 0 0
+< ad the bett
+< 0 0
+< er. Clean and it makes a pan; add the chicory, and cook for a l
+< 0 0
+< ump of flour and no milk, and, if there for either a tammy, over the top. Serve hot. FLEMI
+< 0 0
+< 
+< 0 0
+< SH SOUP Fry some Gr
+< 0 0
+< uyère cheese, pepper, and mix it. MILITARY PRUNES Prunes ar
+< 0 0
+< e done put in dice, minced tongue back on each carrot leaves. Let it a p
+< 0 0
+< 
+< 0 0
+< 
+< 0 0
+< iece of very fat an
+< 0 0
+< d pack them in a side in it down some marine crayfish boile
+< 0 0
+< d, take out of the sauce and forms the seeds and of the
+< 0 0
+< 
+< 0 0
+< croquettes, and th
+< 0 0
+< eir possibilities 
+< 0 0
+< at the middle, a
+< 0 0
+< 
+< 0 0
+< nd decorate with the same way. It can also some toast, cut near 
+< 0 0
+< the boiling water boil them together. Add salt, for s
+< 0 0
+< me minced veal;
+< 0 0
+<  cut off the fi
+< 0 0
+< 
+< 0 0
+< re; turn it your fingers the same way. Form into piece
+< 0 0
+< s of the fruit, cut meat, and cut off the roe from the beef 
+< 0 0
+< in good when they mus
+< 0 0
+< t agree with po
+< 0 0
+< 
+< 0 0
+< tat
+< 0 0
+< oes cut into a l
+< 0 0
+< it
+< 0 0
+< tle Tarragon vinegar and are cooked, 
+< 0 0
+< add half a thin rather less of tongue eat
+< 0 0
+< s very thick enough to cook it all cook gently for an 
+< 0 0
+< our. Just when it
+< 0 0
+< 
+< 0 0
+< 
+< 0 0
+< but failing th
+< 0 0
+< t, with it, a f
+< 0 0
+< ive-franc piec
+< 0 0
+< e. Fill your b
+< 0 0
+< eef, such as w
+< 0 0
+< ell impregnated
+< 0 0
+<  with butter, a
+< 0 0
+< nd serve. CROQUE
+< 0 0
+< TTES OF VEAL WITH SAUSAG
+< 0 0
+< ES Cut your custard, always stirring in butter, very h
+< 0 0
+< ot, dry them wit
+< 0 0
+< h pepper, salt, 
+< 0 0
+< adding to it sim
+< 0 0
+< mer them in plen
+< 0 0
+< ty of either a si
+< 0 0
+< eve once or must
+< 0 0
+< ard. HEADLESS SP
+< 0 0
+< ARROWS Take off th
+< 0 0
+< e oven, cover the 
+< 0 0
+< water. At the sauce 
+< 0 0
+< into another one and 
+< 0 0
+< a lump of an earthenware pot with salt, a
+< 0 0
+< nd fill up again to serve all
+< 0 0
+<  the meat of the same amount
+< 0 0
+<  in Belgium "_un philosophe_." VEAL (A
+< 0 0
+<  cold chicken into a tomato
+< 0 0
+---
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+******** regexp is ^*?*?*?*??*$ *******
+2,3d1
+< 
+< 0 0
+13,14d10
+< 
+< 0 0
+17,18d12
+< 
+< 0 0
+26,27d19
+< 
+< 0 0
+35,38d26
+< 
+< 0 0
+< 
+< 0 0
+53,56d40
+< 
+< 0 0
+< 
+< 0 0
+62,63d45
+< 
+< 0 0
+67,70d48
+< 
+< 0 0
+< 
+< 0 0
+74,75d51
+< 
+< 0 0
+79,80d54
+< 
+< 0 0
+85,86d58
+< 
+< 0 0
+91,92d62
+< 
+< 0 0
+100,103c70,86
+< 
+< 0 0
+< 
+< 0 0
+---
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+******** regexp is ^?*+*?+*+*+*$ *******
+******** regexp is ^?*++??*?+????**+$ *******
+******** regexp is ^!@#$%^&*((*#$ *******
+******** regexp is ^**$ *******
+2,3d1
+< 
+< 0 0
+13,14d10
+< 
+< 0 0
+17,18d12
+< 
+< 0 0
+26,27d19
+< 
+< 0 0
+35,38d26
+< 
+< 0 0
+< 
+< 0 0
+53,56d40
+< 
+< 0 0
+< 
+< 0 0
+62,63d45
+< 
+< 0 0
+67,70d48
+< 
+< 0 0
+< 
+< 0 0
+74,75d51
+< 
+< 0 0
+79,80d54
+< 
+< 0 0
+85,86d58
+< 
+< 0 0
+91,92d62
+< 
+< 0 0
+100,103c70,86
+< 
+< 0 0
+< 
+< 0 0
+---
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+******** regexp is ^*?*?*?*??*$ *******
+2,3d1
+< 
+< 0 0
+13,14d10
+< 
+< 0 0
+17,18d12
+< 
+< 0 0
+26,27d19
+< 
+< 0 0
+35,38d26
+< 
+< 0 0
+< 
+< 0 0
+53,56d40
+< 
+< 0 0
+< 
+< 0 0
+62,63d45
+< 
+< 0 0
+67,70d48
+< 
+< 0 0
+< 
+< 0 0
+74,75d51
+< 
+< 0 0
+79,80d54
+< 
+< 0 0
+85,86d58
+< 
+< 0 0
+91,92d62
+< 
+< 0 0
+100,103c70,86
+< 
+< 0 0
+< 
+< 0 0
+---
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+> -1 -1
+******** regexp is ^?*+*?+*+*+*$ *******
+******** regexp is ^?*++??*?+????**+$ *******
+******** regexp is ^ab$ *******
+******** regexp is ^a?b$ *******
+******** regexp is ^a*b$ *******
+******** regexp is ^a.b$ *******
+******** regexp is ^a+b$ *******
+******** regexp is ----- *******
+******** regexp is ^a?b *******
+7c7,8
+< -1 -1
+---
+> qbc
+> 0 2
+******** regexp is ^a*b *******
+******** regexp is ^a.b *******
+******** regexp is ^a+b *******
+******** regexp is ---- *******
+******** regexp is a?b *******
+******** regexp is a*b *******
+******** regexp is a.b *******
+******** regexp is a+b *******
+******** regexp is ..? *******
+******** regexp is ...* *******
+******** regexp is ...+ *******
+1c1,2
+< -1 -1
+---
+> ab
+> 0 3
+143c144,145
+< -1 -1
+---
+> it
+> 0 3
+******** regexp is .. *******
+******** regexp is ..?... *******
+******** regexp is ...*.. *******
+******** regexp is ...+.... *******
+******** regexp is ------------ *******
+******** regexp is ^..? *******
+******** regexp is ^...* *******
+******** regexp is ^..+ *******
+******** regexp is ^.. *******
+******** regexp is ^..?... *******
+******** regexp is ^...*.. *******
+******** regexp is ^...+.... *******
+******** regexp is ..?$ *******
+******** regexp is ...*$ *******
+******** regexp is ...+$ *******
+1c1,2
+< -1 -1
+---
+> ab
+> 0 3
+143c144,145
+< -1 -1
+---
+> it
+> 0 3
+******** regexp is ..$ *******
+******** regexp is ..?...$ *******
+******** regexp is ...*..$ *******
+******** regexp is ...+....$ *******
+******** regexp is ...**.*..++.+..??.?.. *******
+******** regexp is  *******

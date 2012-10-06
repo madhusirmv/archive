@@ -1,0 +1,117 @@
+#!/usr/bin/python
+
+import sys
+
+def main():
+    #day = { "Mon" : 0, "Tue":1, "Wed": 2, "Thu":3, "Fri": 4, "Sat": 5, "Sun": 6}
+    mon = {"Jan":0 , "Feb":1 , "Mar":2 , "Apr":3 , "May": 4, "Jun":5, "Jul":6, "Aug":7 , "Sep":8 , "Oct":9, "Nov":10, "Dec":11}
+    timezone = {"EDT":0, "EST":1}
+    
+    onemask = 0b1
+    #threemask = 0b111
+    fourmask = 0b1111
+    fivemask = 0b11111
+    sixmask = 0b111111
+    eightmask = 0b11111111
+    fifteenmask = 0b111111111111111
+    
+    #rank1pos = 83
+    #day1pos = 80
+    #mon1pos = 76
+    #dn1pos = 71
+    #hr1pos = 66
+    #min1pos = 60
+    #sec1pos = 54
+    #tz1pos = 53
+    #yr1pos = 49
+    
+    rank2pos = 32
+    #day2pos = 31
+    mon2pos = 28
+    dn2pos = 23
+    hr2pos = 17
+    min2pos = 11
+    sec2pos = 5
+    tz2pos = 4
+    yr2pos = 0
+    
+    #line1 = sys.stdin.readline()
+    line2 = sys.stdin.readline()
+    
+    while(line2 != ""):
+        #line1 = sys.stdin.readline()
+        #line2 = sys.stdin.readline()
+        
+        
+        #check if they're "" at EOF
+        #if(line1 != ""):
+            #   [rank1, day1, mon1, dn1, hr1, min1, sec1, tz1, yr1 ] = line1.split()
+             
+            #   rank1b = rank1 & fifteenmask
+            #  day1b = threemask & day[day1]
+            #  mon1b = fourmask & mon[mon1]
+            #  dn1b = fivemask & dn1
+            #  hr1b = sixmask & hr1
+            #  min1b = sixmask & min1
+            #  sec1b = sixmask & sec1
+            #  tz1b = onemask & timezone[tz1]
+            #  yr1b = fourmask & (yr1 - 2000)
+            
+        line2 = line2.replace("  ", "")    
+        # look at gaussian algorithm
+        if(line2 != ""):
+            [rank2, day2, mon2, dn2, time2, tz2, yr2] = line2.split()
+            day2
+            rank2 = rank2.replace(',', '')
+            [hr2, min2, sec2] = time2.split(":")
+            rank2b = fifteenmask & int(rank2) #32
+            #day2b = threemask & day[day2] 
+            mon2b = fourmask & mon[mon2] #28
+            dn2b = fivemask & int(dn2) #23
+            hr2b = sixmask & int(hr2) #17
+            min2b = sixmask & int(min2) #11
+            sec2b = sixmask & int(sec2) #5
+            tz2b = onemask & timezone[tz2] #4
+            yr2b = fourmask & (int(yr2) - 2000)
+            
+        # if(line1 != "" and line2 != ""):
+        #    rank1b = rank1b << rank1pos
+        #    day1b = day1b << day1pos
+        #    mon1b = mon1b << mon1pos
+        #    dn1b = dn1b << dn1pos
+        #    hr1b = hr1b << hr1pos
+        #    min1b = min1b << min1pos
+        #    sec1b = sec1b << sec1pos
+        #    tz1b = tz1b << tz1pos
+        #    yr1b = yr1b << yr1pos
+        #    
+        if(line2 != ""):
+            rank2b = rank2b << rank2pos
+            #day2b = day2b << day2pos
+            mon2b = mon2b << mon2pos
+            dn2b = dn2b << dn2pos
+            hr2b = hr2b << hr2pos
+            min2b = min2b << min2pos
+            sec2b = sec2b << sec2pos
+            tz2b = tz2b << tz2pos
+            yr2b = yr2b << yr2pos
+            
+        #check if its just one line left over
+        #rank1b + day1b + mon1b + dn1b + hr1b + min1b + sec1b+ tz1b + yr1b +
+        #total = rank2b + day2b + mon2b + dn2b + hr2b + min2b + sec2b + tz2b + yr2b
+        #total = total << 7
+        
+        total = rank2b + mon2b + dn2b + hr2b + min2b + sec2b + tz2b + yr2b
+        total = total << 1
+        
+        #line1 = sys.stdin.readline()
+        line2 = sys.stdin.readline()
+        i = 5
+        while(i >=  0):
+            boteight = total >> (i*8)
+            boteight = boteight & eightmask
+            sys.stdout.write(chr(boteight))
+            i = i -1
+        #sys.stdout.write(total)
+        
+main()

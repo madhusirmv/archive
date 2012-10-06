@@ -1,0 +1,18 @@
+#!/bin/bash
+
+
+clear
+./c2test.py < crank.txt > out.txt
+bzip2 < out.txt > zipped.bz2
+s=3
+orig=3171
+FILENAME1=/home/pgrabowski/phdvdev/workspace/assign3/zipped.bz2
+FILENAME2=/home/pgrabowski/phdvdev/workspace/assign3/c2test.py
+FILESIZE1=$(stat -c%s "$FILENAME1")
+FILESIZE2=$(stat -c%s "$FILENAME2")
+SUM=$(echo "scale=$s; $FILESIZE1/1024 + $FILESIZE2/1024" | bc)
+r2=$(echo "scale=$s; $orig/$SUM" | bc)
+echo "file 1 = $FILESIZE1 kb file 2 = $FILESIZE2 kb total = $SUM kb"
+echo "Size  is $SUM kB."
+echo "Ratio is $r2"
+echo

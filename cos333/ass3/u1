@@ -1,0 +1,10 @@
+#!/bin/bash
+
+chmod 777 d1.py
+mv $1 $1.bz2
+bunzip2 -c $1.bz2 > out.txt
+./d1.py < out.txt > out2.txt
+cat out2.txt
+rm out2.txt
+rm out.txt
+rm $1.bz2

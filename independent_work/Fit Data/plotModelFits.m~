@@ -1,0 +1,12 @@
+function [ ] = plotModelFits( ntrials reps trueEta trueBeta )
+% Repeats a Model fit 'reps' times and plots results against true values
+    
+    plot(trueEta, trueBeta, 'rx');
+    for i = 1:reps
+        fit = ModelFitDriverBandit(ntrials);
+        h
+    end
+    
+
+end
+

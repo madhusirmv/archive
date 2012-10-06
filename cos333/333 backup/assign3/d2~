@@ -1,0 +1,6 @@
+#!/bin/bash
+
+mv $1 $1.bz2
+bunzip2 -c $1.bz2 > out.txt
+./d2.py < out.txt 
+cat out.txt

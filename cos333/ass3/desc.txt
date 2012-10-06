@@ -1,0 +1,19 @@
+This assignment is an exercise in using scripting languages to explore and manipulate two largish text files. Your job is to compress these files (separately) as much as you can, using standard Unix tools and scripting languages like Awk, Perl, Python, PHP, and so on; you can't use general-purpose languages like C, C++, or Java. Here are help files for Awk, Perl, Python and PHP that might get you started.
+
+There are many Unix tools that will help too: gzip and bzip2 do general-purpose compression; grep, sed, sort, uniq and wc let you find, count and rearrange things; and of course shells and scripting languages let you do your own processing and combine other pieces.
+
+Your compression must be lossless, so the original data can be reconstituted exactly. If you remove something redundant, you have to be able to recreate it. Similarly, if you rearrange any part of the data, for example by sorting, you have to be able to recover what you started with. Your techniques should also be expected to achieve similar compression on an input file that is similar.
+
+1. What's in a Name?
+
+The file names.txt (3.1 MB) contains nearly 89,000 surnames from the 1990 census, sorted by frequency of occurrence. The original data and background information can be found at the Census Bureau.
+
+Compress this file as much as you can, using only standard Unix tools and scripting languages. You have to also provide the procedure for uncompressing. For calibration, I squeezed it by a factor of nearly 10 with only 6-8 lines of Awk, a factor of 12 is well within range, and the best ever was over 14.
+
+It's probably easiest to do your experiments by focusing first on a compression script, but always keeping in mind the process by which you will uncompress. Once you think the compression is good enough, collect all the compression operations into a script that can be run by a single command, and all the uncompression operations into another script.
+
+You must submit two scripts c1 and u1 that compress and uncompress respectively. c1 creates a single compressed file from a single input file, and u1 creates an uncompressed file from a single compressed input file. We will test your work by running just those two scripts on the census data. After
+
+	c1 names.txt compressed.form
+	u1 compressed.form newnames.txt 
+newnames.txt must match names.txt exactly.
